@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Puzzle Studio Design</title>
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link href="css/prettyPhoto.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet" />
+ 
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse.collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+            <div class="navbar-brand">
+              <a href="index.html"><h1><span>Puzzle Studio Design</span></h1></a>
+            </div>
+          </div>
+
+          <div class="navbar-collapse collapse">
+            <div class="menu">
+              <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation"><a href="index.html">Головна</a></li>
+                <li role="presentation"><a href="about.html">О нас</a></li>
+                <li role="presentation"><a href="services.html">Послуги</a></li>
+                <li role="presentation"><a href="portfolio.html">Портфоліо</a></li>
+                <li role="presentation"><a href="blog.html">Новини</a></li>
+                <li role="presentation"><a href="contact.html" class="active">Контакти</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div id="breadcrumb">
+    <div class="container">
+      <div class="breadcrumb">
+        <li><a href="index.html">Головна</a></li>
+        <li>Контакти</li>
+      </div>
+    </div>
+  </div>
+  
+<section id="contact-page">
+<div class="container">
+  <div class = "center">                
+            <h2>Як нас знайти?</h2>
+            <p class = "lead">Ви можете зробити замовлення, а так само залишити пропозиції та скарги тим самим поліпшити наш сервіс відправивши лист</p>
+        </div>
+        <div class = "gmap-area">
+            <div class = "container">
+                <div class = "row">
+                    <div class = "col-sm-5 text-center">
+                        <div class = "gmap">
+                          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2605.2696300926623!2d28.46616321514697!3d49.23337698218481!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472d5b7b47978363%3A0xec5a859f35720568!2z0YPQuy4g0KHQvtCx0L7RgNC90LDRjywgNTIsINCS0LjQvdC90LjRhtCwLCDQktC40L3QvdC40YbQutCw0Y8g0L7QsdC70LDRgdGC0YwsIDIxMDAw!5e0!3m2!1sru!2sua!4v1516024229842" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+						</div>
+						</div>
+                    </div>
+					<div class = "container">
+                    <div class = "col-sm-7 map-content">
+                        <ul class = "row">
+                            <li class = "col-sm-6">
+                              <h4>Україна м.Вінниця 21000</h4>
+                                    <p>вул Соборна 52 офис 210<br></p>
+                                    <p>Телефони:<br> +38 093 118 70 74<br>+38 068 288 15 52<br>+38 0432 69-59-39<br>Адреса електронної пошти:<br> info@puzzle-studio.com.ua<br> Веб: puzzle-studio.com.ua </p>
+                                    </li>
+                      </ul>
+                    </div>
+               </div>
+           </div>
+       </div>
+  
+     <div class="container">
+        <div class="center">        
+            <h2>Залиште своє повідомлення</h2>
+        <p>Ви можете зробити замовлення, а так само залишити пропозиції та скарги тим самим поліпшити наш сервіс відправивши лист</p>
+        </div> 
+        <div class="row contact-wrap"> 
+            <div class="status alert alert-success" style="display: none"></div>
+            <form id="main-contact-form" class="contact-form" name="contact-form" method="post" action="sendemail.php">
+                <div class="col-sm-5 col-sm-offset-1">
+                    <div class="form-group">
+                        <label>Ваше Ім'я *</label>
+                        <input type="text" name="name" class="form-control" required="required">
+                    </div>
+                    <div class="form-group">
+                        <label>Email *</label>
+                        <input type="email" name="email" class="form-control" required="required">
+                    </div>
+                    <div class="form-group">
+                        <label>Телефон</label>
+                        <input type="number" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>Компанія</label>
+                        <input type="text" class="form-control">
+                    </div>                        
+                </div>
+                <div class="col-sm-5">
+                    <div class="form-group">
+                        <label>Тема *</label>
+                        <input type="text" name="subject" class="form-control" required="required">
+                    </div>
+                    <div class="form-group">
+                        <label>Повідомлення *</label>
+                        <textarea name="message" id="message" required="required" class="form-control" rows="8"></textarea>
+                    </div>                        
+                    <div class="form-group">
+                        <button type="submit" name="submit" class="btn btn-primary btn-lg" required="required">ВІДПРАВИТИ</button>
+                    </div>
+                </div>
+            </form> 
+        </div><!--/.row-->
+    </div><!--/.container-->
+      </section>
+  <!--/#contact-page-->
+
+  <footer>
+    <div class="footer">
+      <div class="container">
+       <div class="col-sm-3 social">
+            <h3><a href="https://vk.com/puzzle_studio2017" target="_blank"><i class="fa fa-vk fa-2x" aria-hidden="true"></i></a>
+            <a href="https://www.facebook.com/PuzzlestudioDesign" target="_blank"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/puzzle_studio_design" target="_blank"><i class="fa fa-camera-retro fa-2x" aria-hidden="true"></i></a>
+			<p>Режим роботи з 9<sup>00</sup>до 18<sup>00</sup>м. Вінниця вул. Соборна 52 офис 210</p></h3>
+			
+			</div>
+		
+		<div class="col-sm-6 phone_number">
+            <i class="fa fa-mobile fa-2x" aria-hidden="true"><a href="tel:+380931187074">+38 093 118 70 74</a></i><br>
+			<i class="fa fa-mobile fa-2x" aria-hidden="true"><a href="tel:+380682881552">+38 068 288 15 52</a></i><br>
+			<i class="fa fa-mobile fa-2x" aria-hidden="true"><a href="tel:+380432695939">+38(0432)69-59-39</a></i><br>
+			</div>
+			
+        <div class="col-md-4 col-md-offset-4">
+          <div class="copyright">
+            &copy; <a href="https://puzzle-studio.com.ua">Puzzle Studio Design. All Rights Reserved.</a>
+                     
+        </div>
+      </div>
+
+      <div class="pull-right">
+        <a href="#home" class="scrollup"><i class="fa fa-angle-up fa-3x"></i></a>
+      </div>
+    </div>
+	</div>
+  </footer>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery-2.1.1.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.prettyPhoto.js"></script>
+  <script src="js/jquery.isotope.min.js"></script>
+  <script src="js/wow.min.js"></script>
+    <script src="js/functions.js"></script>
+  <script src="contactform/contactform.js"></script>
+
+</body>
+
+</html>
